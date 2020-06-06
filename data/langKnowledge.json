@@ -1,0 +1,39 @@
+[{
+        "Lang": "HTML"
+    },
+    {
+        "Lang": "CSS"
+    },
+    {
+        "Lang": "JavaScript"
+    },
+    {
+        "Lang": "Python"
+    },
+    {
+        "Lang": "Flask"
+    },
+    {
+        "Lang": "Django"
+    },
+    {
+        "Lang": "MySql"
+    },
+    {
+        "Lang": "MongoDB"
+    }, {
+        "Lang": "Github"
+    },
+    {
+        "Lang": "Visual Studio Code"
+    },
+    {
+        "Lang": "Swift"
+    },
+    {
+        "Lang": "XCode"
+    },
+    {
+        "Lang": "Linux"
+    }
+]

@@ -1,0 +1,31 @@
+[{
+        "build": "Webserver",
+        "description": "",
+        "status": ""
+    },
+    {
+        "build": "Wordpress Server",
+        "description": "",
+        "status": ""
+    },
+    {
+        "build": "File Server",
+        "description": "",
+        "status": ""
+    },
+    {
+        "build": "Retro Game Emulator",
+        "description": "",
+        "status": ""
+    },
+    {
+        "build": "Media Player (KODI)",
+        "description": "",
+        "status": ""
+    },
+    {
+        "build": "Advertising Platform",
+        "description": "",
+        "status": ""
+    }
+]

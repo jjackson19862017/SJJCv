@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap 4.5 - https://getbootstrap.com/docs/4.5/layout/overview/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Bootstrap 4.5 -->
+  <!-- Font Awesome -->
+  <link href="{{ url_for('static',filename='css/all.min.css') }}" rel="stylesheet">
+  <script defer src="{{ url_for('static',filename='js/all.js') }}"></script>
+  <!-- Font Awesome -->
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <!-- Animate CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <!-- Animate CSS-->
+    <!-- This is for my custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/custom.css') }}">
+    <!-- This is for my custom CSS -->
+
+    <title>{% block title %}{% endblock title %}</title> <!-- This allows each page to have there own titles -->
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('experience') }}">Experience</a></li>
+            <li><a href="{{ url_for('education') }}">Education</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        </ul>
+    </nav>
+
+
+    {% block content %}
+    {% endblock content %}
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap 4.5 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 4.5 -->
+</body>
+
+</html>

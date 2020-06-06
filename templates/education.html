@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+Career
+{% endblock title %}
+{% block content %}
+<h1>{{ page_title }}</h1>
+{% for f in furtEduc %}
+<h3>{{f.course}}</h3>
+<p>{{f.company}}</p>
+<p>Achieved in {{f.achieved}}</p>
+<p>Awarded with {{f.result}}</p>
+<hr> <!-- Horizontal Rule -->
+{% endfor %}
+{% for e in educ %}
+<h3>{{e.school}}</h3>
+<p>{{e.level}}</p>
+<p>Achieved in {{e.dateFinished}}</p>
+{% if e.awarded == "2" %}
+<p><i class="fas fa-award"></i><i class="fas fa-award"></i> {{e.subject}}</p>
+{% else %}
+<p><i class="fas fa-award"></i> {{e.subject}}</p>
+{% endif %}
+{% if loop.index != loop.length%}
+<hr> <!-- Horizontal Rule -->
+{% endif %}
+{% endfor %}
+{% endblock content %}

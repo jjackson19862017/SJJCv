@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    Contact Us
+{% endblock title %}
+{% block content %}
+<h1>{{ page_title }}</h1>
+{% for pis in piProjects %}
+<h3>{{pis.build}}</h3>
+<p>{{pis.description}}</p>
+<p>{{pis.status}}</p>
+
+{% if loop.index != loop.length%}
+<hr> <!-- Horizontal Rule -->
+{% endif %}
+{% endfor %}
+{% for prog in programs %}
+<h3>{{prog.programTitle}}</h3>
+<p>{{prog.programDescription}}</p>
+<p>{{prog.completed}}</p>
+<p>{{prog.timeTaken}}</p>
+
+{% if loop.index != loop.length%}
+<hr> <!-- Horizontal Rule -->
+{% endif %}
+{% endfor %}
+{% endblock content %}
