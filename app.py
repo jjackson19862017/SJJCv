@@ -40,7 +40,21 @@ def education():
 	with open("data/further.json", "r") as json_data:
 		furtEduc = json.load(json_data)
 	return render_template("education.html", page_title="Education", educ=educ, furtEduc=furtEduc)
-	
+
+@app.route('/skills')
+def skills():
+	return render_template("skills.html", page_title="Work Experience")
+
+@app.route('/interests')
+def interests():
+	return render_template("interests.html", page_title="Work Experience")
+
+@app.route('/awards')
+def awards():
+	return render_template("awards.html", page_title="Work Experience")
+
+
+
 if __name__ == '__main__':
 	app.run(host=os.environ.get('IP'),
 					port=os.environ.get('PORT'),
