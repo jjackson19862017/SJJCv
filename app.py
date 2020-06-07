@@ -36,10 +36,8 @@ def education():
 	with open("data/education.json", "r") as json_data:
 		educ = json.load(json_data)
 	""" Access Further education json file """
-	furtEduc = []
-	with open("data/further.json", "r") as json_data:
-		furtEduc = json.load(json_data)
-	return render_template("education.html", page_title="Education", educ=educ, furtEduc=furtEduc)
+	
+	return render_template("education.html", page_title="Education", educ=educ)
 
 @app.route('/skills')
 def skills():
@@ -51,7 +49,10 @@ def interests():
 
 @app.route('/awards')
 def awards():
-	return render_template("awards.html", page_title="Work Experience")
+	furtEduc = []
+	with open("data/further.json", "r") as json_data:
+		furtEduc = json.load(json_data)
+	return render_template("awards.html", page_title="Work Experience", furtEduc=furtEduc)
 
 
 

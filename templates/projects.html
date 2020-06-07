@@ -1,26 +1,32 @@
 {% extends 'base.html' %}
 {% block title %}
-    Contact Us
+    My Projects
 {% endblock title %}
 {% block content %}
-<h1>{{ page_title }}</h1>
-{% for pis in piProjects %}
-<h3>{{pis.build}}</h3>
-<p>{{pis.description}}</p>
-<p>{{pis.status}}</p>
+<section class="resume-section" id="education">
+    <div class="resume-section-content">
+        <h2 class="mb-5">{{ page_title }}</h2>
+        {% for pis in piProjects %}
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">{{ pis.build }}</h3>
+                <div class="subheading mb-3">{{ pis.status }}</div>
+                <div> {{pis.description}}</div>
+            </div>
+        </div>
+        {% endfor %}
 
-{% if loop.index != loop.length%}
-<hr> <!-- Horizontal Rule -->
-{% endif %}
-{% endfor %}
-{% for prog in programs %}
-<h3>{{prog.programTitle}}</h3>
-<p>{{prog.programDescription}}</p>
-<p>{{prog.completed}}</p>
-<p>{{prog.timeTaken}}</p>
-
-{% if loop.index != loop.length%}
-<hr> <!-- Horizontal Rule -->
-{% endif %}
-{% endfor %}
+        {% for prog in programs %}
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="flex-grow-1">
+                <h3 class="mb-0">{{prog.programTitle}}</h3>
+                <div class="subheading mb-3">Time taken to complete - {{prog.timeTaken}}</div>
+                <div> {{prog.programDescription}}</div>
+            </div>
+            <div class="flex-shrink-0"><span class="text-primary">Finished -  {{prog.completed}}</span></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<hr class="m-0" />
 {% endblock content %}
