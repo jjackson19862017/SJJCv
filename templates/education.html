@@ -1,21 +1,24 @@
 {% extends 'base.html' %}
 {% block title %}
-Education
+{{ page_title }}
 {% endblock title %}
 {% block content %}
 <section class="resume-section" id="education">
     <div class="resume-section-content">
         <h2 class="mb-5">{{ page_title }}</h2>
         {% for e in educ %}
+        
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
                 <h3 class="mb-0">{{ e.school }}</h3>
                 <div class="subheading mb-3">{{ e.level }}</div>
-                {% if e.awarded == "2" %}
-                <div><i class="fas fa-award text-warning"></i><i class="fas fa-award text-warning"></i> {{e.subject}}</div>
+                {% for sub in e.subject %}
+                {% if e.awarded[loop.index0] == "2" %}
+                <div><i class="fas fa-award text-warning"></i><i class="fas fa-award text-warning"></i> {{sub}}</div>
                 {% else %}
-                <div><i class="fas fa-award text-warning"></i> {{e.subject}}</div>
+                <div><i class="fas fa-award text-warning"></i> {{sub}}</div>
                 {% endif %}
+                {% endfor %}
             </div>
             <div class="flex-shrink-0"><span class="text-primary">Achieved {{ e.dateFinished}}</span></div>
         </div>

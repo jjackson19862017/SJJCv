@@ -12,6 +12,7 @@ def index():
 
 @app.route('/experience')
 def experience():
+	""" Access Work Experience json file """
 	workExp = []
 	with open("data/workExp.json", "r") as json_data:
 		workExp = json.load(json_data)
