@@ -16,16 +16,4 @@ Home
     </div>
 </section>
 <hr class="m-0" />
-
-<h1>{{ page_title }}</h1>
-{% for lang in langKnow %}
-
-
-<p>{{lang.Lang}}</p>
-
-
-{% if loop.index != loop.length%}
-<hr> <!-- Horizontal Rule -->
-{% endif %}
-{% endfor %}
 {% endblock content %}
