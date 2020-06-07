@@ -15,7 +15,10 @@ def index():
 
 @app.route('/experience')
 def experience():
-	return render_template("experience.html", page_title="Work Experience")
+	workExp = []
+	with open("data/workExp.json", "r") as json_data:
+		workExp = json.load(json_data)
+	return render_template("experience.html", page_title="Work Experience", workExp=workExp)
 
 @app.route('/projects')
 def projects():
