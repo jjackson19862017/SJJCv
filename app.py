@@ -7,11 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	""" Access langKnowledge json file """
-	langKnow = []
-	with open("data/langKnowledge.json", "r") as json_data:
-		langKnow = json.load(json_data)
-	return render_template("index.html", page_title="Profile", langKnow=langKnow)
+	
+	return render_template("index.html", page_title="Profile")
 
 @app.route('/experience')
 def experience():
@@ -38,20 +35,25 @@ def education():
 	educ = []
 	with open("data/education.json", "r") as json_data:
 		educ = json.load(json_data)
-	""" Access Further education json file """
+	
 	
 	return render_template("education.html", page_title="Education", educ=educ)
 
 @app.route('/skills')
 def skills():
-	return render_template("skills.html", page_title="Work Experience")
+	return render_template("skills.html", page_title="Skills")
 
 @app.route('/interests')
 def interests():
-	return render_template("interests.html", page_title="Work Experience")
+	""" Access interests json file """
+	data = []
+	with open("data/interests.json", "r") as json_data:
+		data = json.load(json_data)
+	return render_template("interests.html", page_title="Interests", interests=data)
 
 @app.route('/awards')
 def awards():
+	""" Access Further education json file """
 	furtEduc = []
 	with open("data/further.json", "r") as json_data:
 		furtEduc = json.load(json_data)
