@@ -5,7 +5,7 @@
     },
     {
         "build": "Wordpress Server",
-        "description": "This was researched on Youtube, originally called 'Blog-in-a-box'.  I went down this route because all the tutorials I found would fail and after a week of trying to get my Raspberry Pi to run the Wordpress Server in a stable state.  My brother is a Handyman and while he is not tech savvy, I thought him and his wife could use this to promote his business.  He could of used it for testimonials from customers and shown before and after pictures of all his jobs.",
+        "description": "This was researched on Youtube, originally called 'Blog-in-a-box'.  I went down this route because all the tutorials I found would fail and after a week of trying to get my Raspberry Pi to run the Wordpress Server in a stable state.  My brother is a Handyman and while he is not tech savvy, I thought he and his wife could use this to promote his business.  He could of used it for testimonials from customers and shown before and after pictures of all his jobs.",
         "status": "Brother never used it"
     },
     {
@@ -26,6 +26,6 @@
     {
         "build": "Advertising Platform",
         "description": "My current place of work has a television in the Bar Area that is not utilized to its fullest, so I made use of the TVs in the bar area as a form of an advertising tool for the two hotels. I created a computer package which included photographs of the hotel facilities and information on up and coming events for the two hotels.  This was successful as it increased revenue in both hotels as people were not aware that they had a sister hotel with a function suite. I have recently downsized to a smaller ‘Raspberry Pi Zero’. The advantage of running a ‘Raspberry Pi Zero’ is that I can use the power from the TV USB and have no unsightly wires showing",
-        "status": "Discontinued for the moment as I am looking to improvements for it"
+        "status": "Discontinued for the moment as I am looking to improve it"
     }
 ]

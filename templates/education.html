@@ -7,16 +7,24 @@
     <div class="resume-section-content">
         <h2 class="mb-5">{{ page_title }}</h2>
         {% for e in educ %}
-        
+
         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
                 <h3 class="mb-0">{{ e.school }}</h3>
                 <div class="subheading mb-3">{{ e.level }}</div>
                 {% for sub in e.subject %}
                 {% if e.awarded[loop.index0] == "2" %}
-                <div><i class="fas fa-award text-warning"></i><i class="fas fa-award text-warning"></i> {{sub}}</div>
+                <div><i class="fas fa-award text-warning"></i><i class="fas fa-award text-warning"></i> {{sub}}
+                    {% if e.link != "" %} 
+                    <a href="{{e.link}}" target="_blank" class="btn btn-outline-success btn-sm"
+                        role="button" aria-pressed="true">View Certicate</a> 
+                        {% endif %}</div>
                 {% else %}
-                <div><i class="fas fa-award text-warning"></i> {{sub}}</div>
+                <div><i class="fas fa-award text-warning"></i> {{sub}} 
+                    {% if e.link != "" %} <a href="{{e.link}}"
+                        target="_blank" class="btn btn-outline-success btn-sm" role="button" aria-pressed="true">View
+                        Certicate</a> 
+                        {% endif %}</div>
                 {% endif %}
                 {% endfor %}
             </div>

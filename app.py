@@ -52,16 +52,6 @@ def interests():
 		data = json.load(json_data)
 	return render_template("interests.html", page_title="Interests", interests=data)
 
-@app.route('/awards')
-def awards():
-	""" Access Further education json file """
-	furtEduc = []
-	with open("data/further.json", "r") as json_data:
-		furtEduc = json.load(json_data)
-	return render_template("awards.html", page_title="Work Experience", furtEduc=furtEduc)
-
-
-
 if __name__ == '__main__':
 	app.run(host=os.environ.get('IP'),
 					port=os.environ.get('PORT'),
