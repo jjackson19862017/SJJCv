@@ -1,7 +1,7 @@
 [{
         "school": "Code Institute",
         "level": "Awarded Second Class Honours",
-        "achieved": "2020",
+        "dateFinished": "2020",
         "subject": ["Fullstack Web Developer"],
         "awarded": "1",
         "link": "https://www.credential.net/250b7e7a-17bd-44bd-9e0c-db16b7e2f86c"
@@ -9,7 +9,7 @@
     {
         "school": "Milton Keynes College",
         "level": "Awarded Distinction",
-        "achieved": "2012",
+        "dateFinished": "2012",
         "subject": ["Horticulture Level 2"],
         "awarded": "1",
         "link": ""
@@ -17,7 +17,7 @@
     {
         "school": "Open University",
         "level": "Awarded Distinction",
-        "achieved": "2010",
+        "dateFinished": "2010",
         "subject": ["Book Keeping Level 1"],
         "awarded": "1",
         "link": ""
