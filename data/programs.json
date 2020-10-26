@@ -1,4 +1,10 @@
 [{
+    "programTitle": "Wedding Booking System",
+    "programDescription": "While learning PHP, I thought to cement the learning process that I should try and convert my previous project 'Wedding & Revenue Tracker'.  So that it ran from a database, and had better useability then just a row in Microsoft Excel.",
+    "completed": "2020",
+    "timeTaken": "In Progress"
+    },
+    {
         "programTitle": "Wedding & Revenue Tracker",
         "programDescription": "I was asked by the owners of The Shard and The Mill at Conder Green, to look into designing and building a system that they could use to help with Weddings and Functions.The brief was to create a system that could record and track any wedding or function that had enquired or booked. I recommended doing it in Microsoft Access, as what they wanted was a database. However they did not want to spend the extra money, so I said that I could use Microsoft Excel. I achieved my goal of creating a viable system. I created a dashboard so that the owners could see the current years revenue, I also built in a three year plan so that they could see the potential revenue. The function spreadsheets allows the owners and manager to track each event by name and date. I used conditional cells to highlight problems from the date calculations. For example, if there was data missing from the records the cells would turn red, if everything was ok it would be green. At a glance this would help highlight any issues to the manager or owners, for example if a payment date had been missed.",
         "completed": "2019",
@@ -16,4 +22,5 @@
         "completed": "2010",
         "timeTaken": "One week"
     }
+    
 ]

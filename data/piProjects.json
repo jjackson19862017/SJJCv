@@ -1,4 +1,9 @@
 [{
+    "build": "Homebridge",
+    "description": "After recieving an Apple Homepod for my Birthday, my current smart devices didn't work with my Homepod.  The Raspberry was converted as a Homebridge so that my devices can be used by my Homepod",
+    "status": "Currently in use"
+    },
+    {
         "build": "Web-server",
         "description": "This was a LAMP server, (Linux, Apache, MySQL, and PHP).  This hosted my testing websites before I started doing my Fullstack Developer Course and I learn't about Heroku and Github Pages",
         "status": "Discontinued, however plan to rebuild"
