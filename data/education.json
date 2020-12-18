@@ -1,65 +1,86 @@
-[{
+[
+  {
+    "school": "UDEMY",
+    "level": "PHP with Laravel for beginners",
+    "dateFinished": "2020",
+    "subject": ["Learning PHP"],
+    "awarded": "1",
+    "link": "/static/pdf/LaravelCert.pdf"
+  },
+  {
     "school": "UDEMY",
     "level": "PHP: Object Oriented Programming for beginners + Project",
     "dateFinished": "2020",
     "subject": ["Learning PHP"],
     "awarded": "1",
     "link": "/static/pdf/phpoop.pdf"
-},{
+  },
+  {
     "school": "UDEMY",
     "level": "PHP for Beginners",
     "dateFinished": "2020",
     "subject": ["Learning PHP"],
     "awarded": "1",
     "link": "/static/pdf/BeginingPHP.pdf"
-}, {
-        "school": "Code Institute",
-        "level": "Awarded Second Class Honours",
-        "dateFinished": "2020",
-        "subject": ["Fullstack Web Developer"],
-        "awarded": "1",
-        "link": "https://www.credential.net/250b7e7a-17bd-44bd-9e0c-db16b7e2f86c"
-    }, 
-    {
-        "school": "Milton Keynes College",
-        "level": "Awarded Distinction",
-        "dateFinished": "2012",
-        "subject": ["Horticulture Level 2"],
-        "awarded": "1",
-        "link": ""
-    }, 
-    {
-        "school": "Open University",
-        "level": "Awarded Distinction",
-        "dateFinished": "2010",
-        "subject": ["Book Keeping Level 1"],
-        "awarded": "1",
-        "link": ""
-    },
-    {
-        "school": "Blackpool Sixth Form",
-        "level": "A2 Level",
-        "dateFinished": "2004",
-        "subject": ["Information Communication Technology", "Computing"],
-        "awarded": ["1", "1"],
-        "link": ""
-    },
-    {
-        "school": "Blackpool Sixth Form",
-        "level": "AS Level",
-        "dateFinished": "2003",
-        "subject": ["Information Communication Technology", "Computing", "Electronics"],
-        "awarded": ["1", "1", "1"],
-        "link": ""
-
-    },
-    {
-        "school": "Montgomery Secondary School",
-        "level": "GCSE",
-        "dateFinished": "2002",
-        "subject": ["Maths", "Science", "English", "German", "Media Studies", "ICT", "Music"],
-        "awarded": ["1", "2", "2", "1", "1", "1", "1"],
-        "link": ""
-    }
-
+  },
+  {
+    "school": "Code Institute",
+    "level": "Awarded Second Class Honours",
+    "dateFinished": "2020",
+    "subject": ["Fullstack Web Developer"],
+    "awarded": "1",
+    "link": "https://www.credential.net/250b7e7a-17bd-44bd-9e0c-db16b7e2f86c"
+  },
+  {
+    "school": "Milton Keynes College",
+    "level": "Awarded Distinction",
+    "dateFinished": "2012",
+    "subject": ["Horticulture Level 2"],
+    "awarded": "1",
+    "link": ""
+  },
+  {
+    "school": "Open University",
+    "level": "Awarded Distinction",
+    "dateFinished": "2010",
+    "subject": ["Book Keeping Level 1"],
+    "awarded": "1",
+    "link": ""
+  },
+  {
+    "school": "Blackpool Sixth Form",
+    "level": "A2 Level",
+    "dateFinished": "2004",
+    "subject": ["Information Communication Technology", "Computing"],
+    "awarded": ["1", "1"],
+    "link": ""
+  },
+  {
+    "school": "Blackpool Sixth Form",
+    "level": "AS Level",
+    "dateFinished": "2003",
+    "subject": [
+      "Information Communication Technology",
+      "Computing",
+      "Electronics"
+    ],
+    "awarded": ["1", "1", "1"],
+    "link": ""
+  },
+  {
+    "school": "Montgomery Secondary School",
+    "level": "GCSE",
+    "dateFinished": "2002",
+    "subject": [
+      "Maths",
+      "Science",
+      "English",
+      "German",
+      "Media Studies",
+      "ICT",
+      "Music"
+    ],
+    "awarded": ["1", "2", "2", "1", "1", "1", "1"],
+    "link": ""
+  }
 ]
